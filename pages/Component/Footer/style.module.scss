@@ -1,0 +1,32 @@
+.footerContainer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    .wrapper {
+        background-color: #000;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px;
+        .left {
+            width: 100%;
+            max-width: 500px;
+        }
+        .middle {
+            .logo {
+                background-color: #fff;
+                color: #000;
+                padding: 10px;
+                font-weight: bold;
+                border-radius: 5px;
+                font-size: 18px;
+            }
+        }
+        .right {
+            .socials {
+                padding: 10px;
+            }
+        }
+    }
+}

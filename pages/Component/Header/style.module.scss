@@ -22,7 +22,7 @@
         }
         .search {
             input {
-                padding-left: 20px;
+                padding-left: 10px;
                 height: 45px;
                 width: 350px;
                 border: solid 1px #b5bdc4;
@@ -35,6 +35,8 @@
     }
     .right {
         .signs {
+            display: flex;
+            align-items: center;
             .secBtn {
                 color: #476fbf;
                 font-weight: bold;
@@ -44,6 +46,11 @@
                 border: none;
                 outline: none;
                 cursor: pointer;
+                padding: 12px;
+                margin-right: 10px;
+                &:hover {
+                    background-color: #00000009;
+                }
             }
             button {
                 color: #fff;
@@ -56,6 +63,10 @@
                 cursor: pointer;
                 padding: 12px;
                 border-radius: 7px;
+                &:hover {
+                    background-color: #00000009;
+                    color: #476fbf;
+                }
             }
         }    
     }
