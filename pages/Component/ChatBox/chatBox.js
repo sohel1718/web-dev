@@ -15,7 +15,7 @@ const ChatBox = ({ Chat }) => {
     
 
     const sendMessage = () => {
-        db.collection("chats").add({
+        db.collection("chats").doc().add({
             timestamp: Date.now(),
             message: message,
             Receiver: Chat,
