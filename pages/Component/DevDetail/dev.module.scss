@@ -1,0 +1,78 @@
+.devContainer {
+    height: 100vh;
+    .wrapper {
+        background: #2980B9;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */        
+        height: 100%;
+        -moz-box-shadow:    inset 0 0 10px #000000;
+        -webkit-box-shadow: inset 0 0 10px #000000;
+        box-shadow:         inset 0 0 10px #000000;
+        .user {
+            display: flex;
+            flex-direction: column;
+            width: max-content;
+            text-align: center;
+            margin: 0 auto;
+            padding-top: 100px;
+            .userImage {
+                height: 269px;
+                width: 270px;
+                border-radius: 50%;
+                border: 10px solid #000;
+                .waveImage {    
+                    margin-top: -60px;
+                    margin-right: -160px;  
+                    img {
+                        height: 60px;
+                        width: 60px;
+                        
+                    }
+                }
+                img {
+                    height: 250px;
+                    width: 250px;
+                    border-radius: 50%;
+                }
+            }
+            span {
+                margin-top: 10px;
+                text-transform: uppercase;
+                color: #fff;
+                background-color: #000;
+                padding: 10px;
+                font-weight: bold;
+                border-radius: 7px;
+            }
+        }
+        .tagline {
+            text-align: center;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #000;
+            color: #fff;
+            font-weight: bold;
+            text-transform: uppercase;
+            width: max-content;
+            border-radius: 7px;
+            margin: 10px auto;
+        }
+        .skills {
+            display: flex;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 450px;
+            flex: 0 1 auto;
+            flex-wrap: wrap;
+            .skill {
+                background-color: rgb(239, 239, 239);
+                padding: 5px;
+                text-transform: uppercase;
+                font-weight: bold;
+                width: max-content;
+                margin: 5px;
+                border-radius: 7px;
+            }
+        }
+    }
+}

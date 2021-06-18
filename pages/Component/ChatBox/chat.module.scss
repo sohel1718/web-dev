@@ -1,0 +1,73 @@
+.chatBoxContainer {
+    height: 100vh;
+    .wrapper {
+        height: 100%;
+        .chatPanel {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            .primaryUser {
+               span {
+                background: #0052D4;  /* fallback for old browsers */
+                    background: -webkit-linear-gradient(to right, #6FB1FC, #4364F7, #0052D4);  /* Chrome 10-25, Safari 5.1-6 */
+                    background: linear-gradient(to right, #6FB1FC, #4364F7, #0052D4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                color: #fff;
+                width: max-content;
+                padding: 10px;
+                border-radius: 7px;
+                float: right;
+               }
+            }
+            .secondaryUser {
+                span {
+                   
+                    
+                    background: #00d2ff;  /* fallback for old browsers */
+                    background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);  /* Chrome 10-25, Safari 5.1-6 */
+                    background: linear-gradient(to right, #3a7bd5, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                    color: #fff;
+                    width: max-content;
+                    padding: 10px;
+                    border-radius: 7px;
+                    float: left;
+                }
+            }
+        }
+        .sendBox {
+            margin-bottom: 100px;
+            position: fixed;
+            bottom: 0;
+            box-shadow: 0 -5px 5px -5px #333;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            textarea {
+                padding: 20px;
+                height: 80px;
+                width: 100%;
+                max-width: 600px;
+                border: none;
+                outline: none;
+                border-radius: 10px;
+                background: #1c92d2;  /* fallback for old browsers */
+                background: -webkit-linear-gradient(to right, #f2fcfe, #1c92d2);  /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to right, #f2fcfe, #1c92d2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                -moz-box-shadow:    inset 0 0 10px #000000;
+                -webkit-box-shadow: inset 0 0 10px #000000;
+                box-shadow:         inset 0 0 10px #000000;
+            }
+            button {
+                background: none;
+                outline: none;
+                border: none;
+                cursor: pointer;
+                margin-left: 40px;
+                img {
+                    height: 40px;
+                    width: 40px;
+                }
+            }
+        }
+    }
+}

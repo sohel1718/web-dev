@@ -1,0 +1,12 @@
+.chatContainer {
+    .wrapper {
+        width: 100%;
+        display: flex;
+        .devDetail {
+            width: 50%;
+        }
+        .chatWrapper {
+            width: 50%;
+        }
+    }
+}

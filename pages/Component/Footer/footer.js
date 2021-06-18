@@ -11,11 +11,6 @@ const Footer = () => {
                 <div className={style.left}>
                     DEV Community – A constructive and inclusive social network for software developers. With you every step of your
                 </div>
-                <div className={style.middle}>
-                    <div className={style.logo}>
-                        {"while( ! (succeed = try() ) );"}
-                    </div>
-                </div>
             </div>
         </div>
     )
