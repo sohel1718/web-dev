@@ -1,6 +1,7 @@
 import React from 'react'
 import Style from  './style.module.scss' 
 import { useAuthState } from "react-firebase-hooks/auth"
+import Link from 'next/dist/client/link'
 import { auth, db } from "../../firebase"
 import Image from 'next/image'
 import logo from '../../../public/images/dev-black.png'
@@ -10,6 +11,7 @@ const Header = () => {
     const myLoader=({src})=>{
         return `${user.photoURL}`;
     }
+
     return (
         <div className={Style.headerContainer}>
              <div className={Style.line}></div>
@@ -31,8 +33,11 @@ const Header = () => {
                     ( 
                         <div className={Style.right}>
                     <div className={Style.signs}>
-                        <button className={Style.secBtn} >Log in</button>
-                        <button>Create account</button>
+                        <Link href="/">
+                            <a>
+                                <button className={Style.secBtn} >Log in</button>
+                            </a>
+                        </Link>
                     </div>
                 </div>
                     ) : (
@@ -41,7 +46,14 @@ const Header = () => {
                                 <Image loader={myLoader} src={user.photoURL} alt="" height="20px" width="20px" /> 
                             </div>
                             <span>Welcome, {user.providerData[0].displayName}</span>
-                            <button onClick={() => auth.signOut() }>SignOut</button>
+                            <Link href="/Blogs">
+                                <a>
+                                    <button className={Style.secBtn}>Blogs</button>
+                                </a>
+                            </Link>
+                            <Link href="/">
+                                <a><button onClick={() => auth.signOut() }>SignOut</button></a>
+                            </Link>
                         </div>
                     )
                 }

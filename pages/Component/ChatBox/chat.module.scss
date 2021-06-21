@@ -6,35 +6,74 @@
             padding: 20px;
             display: flex;
             flex-direction: column;
-            .primaryUser {
-               span {
-                background: #0052D4;  /* fallback for old browsers */
-                    background: -webkit-linear-gradient(to right, #6FB1FC, #4364F7, #0052D4);  /* Chrome 10-25, Safari 5.1-6 */
-                    background: linear-gradient(to right, #6FB1FC, #4364F7, #0052D4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                color: #fff;
-                width: max-content;
-                padding: 10px;
-                border-radius: 7px;
-                float: right;
-               }
+            height: 100%;
+            max-height: 80%;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            &::-webkit-scrollbar { 
+                display: none;  /* Safari and Chrome */
             }
-            .secondaryUser {
+            .messagePrimary {
+                display: flex;
+                justify-content: flex-end;
+                flex-direction: column;
+                
                 span {
-                   
-                    
-                    background: #00d2ff;  /* fallback for old browsers */
-                    background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);  /* Chrome 10-25, Safari 5.1-6 */
-                    background: linear-gradient(to right, #3a7bd5, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                    color: #fff;
-                    width: max-content;
-                    padding: 10px;
-                    border-radius: 7px;
-                    float: left;
+                    display: flex;
+                    justify-content: flex-end;
+                }
+                .primaryUser {
+                    margin: 10px 0;
+                    display: flex;
+                    justify-content: flex-end;
+                    img {
+                         border-radius: 50%;
+                     }
+                    span {
+                     margin-right: 10px;       
+                     background: #0052D4;  /* fallback for old browsers */
+                         background: -webkit-linear-gradient(to right, #6FB1FC, #4364F7, #0052D4);  /* Chrome 10-25, Safari 5.1-6 */
+                         background: linear-gradient(to right, #6FB1FC, #4364F7, #0052D4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                     color: #fff;
+                     width: max-content;
+                     padding: 10px;
+                     border-radius: 7px;
+                     float: right;
+                    }
+                 }
+            }
+
+            .messageSecondary {
+                display: flex;
+                justify-content: flex-start;
+                flex-direction: column;
+                span {
+                    display: flex;
+                    justify-content: flex-start;
+                }
+                .secondaryUser {
+                    margin: 5px 0;
+                    display: flex;
+                    justify-content: flex-start;
+                    img {
+                        border-radius: 50%;
+                    }
+                    span {
+                        margin-left: 10px;                    
+                        background: #00d2ff;  /* fallback for old browsers */
+                        background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);  /* Chrome 10-25, Safari 5.1-6 */
+                        background: linear-gradient(to right, #3a7bd5, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                        color: #fff;
+                        width: max-content;
+                        padding: 10px;
+                        border-radius: 7px;
+                        float: left;
+                    }
                 }
             }
         }
         .sendBox {
-            margin-bottom: 100px;
+            margin-bottom: 80px;
             position: fixed;
             bottom: 0;
             box-shadow: 0 -5px 5px -5px #333;
@@ -42,6 +81,7 @@
             display: flex;
             align-items: center;
             padding: 20px;
+            background-color: #fff;
             textarea {
                 padding: 20px;
                 height: 80px;

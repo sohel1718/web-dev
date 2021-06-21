@@ -5,10 +5,10 @@ import { useAuthState } from "react-firebase-hooks/auth"
 import Login from './login'
 import { auth, db } from "./firebase"
 import Loading from './Component/Loading'
+import { de } from 'date-fns/locale'
 
 function MyApp({ Component, pageProps }) {
   const [user, loading] = useAuthState(auth)
-
   useEffect(() => {
     if (user) {
       db.collection('users').doc(user.uid).set({

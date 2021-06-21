@@ -20,9 +20,9 @@ export default function Home() {
           <div className={Style.wrapper}>
             <div className={Style.userCount}>
               <Image src={rocket} alt="" />
-              <span>{"<TotalDevelopersOnline props={20} />"}</span>
-              <Link href="/User">
-                <a><button>{"See Users"}</button></a>
+              <span>{"<TotalDevelopers props={20} />"}</span>
+              <Link href="/RandomChat/Chat">
+                <a><button>{"Start Chating"}</button></a>
               </Link>
             </div>
             <div className={Style.users}>
